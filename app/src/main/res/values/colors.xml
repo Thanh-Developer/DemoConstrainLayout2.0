@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26a69a</color>
+    <color name="colorPrimaryDark">#00bfa5</color>
+    <color name="colorAccent">#B39DDB</color>
+    <color name="gray_divider">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="light_gray">#eeeeee</color>
+
+    <color name="divider_gray">#eeeeee</color>
+    <color name="button_blue">#3983f2</color>
+    <color name="caption_text_color">#555555</color>
+    <color name="pink">#E6BFE9</color>
+    <color name="pink_2">#F16FC1</color>
+    <color name="yellow">#FFD600</color>
+    <color name="blue">#0091EA</color>
+</resources>
