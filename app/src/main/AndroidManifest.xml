@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.demo.constraint2">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,30 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.demo.constraint2.home.OptionsActivity">
+
+        <activity android:name="com.demo.constraint2.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.demo.constraint2.constraintset.MovieActivity" />
-        <activity android:name="com.demo.constraint2.constraintset.CupcakeActivity" />
-        <activity android:name="com.demo.constraint2.circular.CircularConstraintActivity" />
-        <activity android:name="com.demo.constraint2.miagefilter.ImageFilterViewActivity" />
-        <activity android:name="com.demo.constraint2.contrainstate.ConstraintLayoutStatesExampleActivity" />
-        <activity android:name="com.demo.constraint2.motionlayout.RecyclerViewSwipeMotionActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.demo.constraint2.motionlayout.MotionActivity" />
-        <activity android:name="com.demo.constraint2.motionlayout.MotionKeyFrameActivity"/>
-        <activity android:name="com.demo.constraint2.motionlayout.MotionBasicActivity"/>
-        <activity android:name="com.demo.constraint2.recyclerperconstrain.ConstrainActivity"/>
-        <activity android:name="com.demo.constraint2.recyclerliner.LinearActivity"/>
+        <activity android:name=".constraintset.MovieActivity" />
+        <activity android:name=".constraintset.CupcakeActivity" />
+        <activity android:name=".circular.CircularConstraintActivity" />
+        <activity android:name=".miagefilter.ImageFilterViewActivity" />
+        <activity android:name=".contrainstate.ConstraintLayoutStatesExampleActivity" />
+        <activity android:name=".motionlayout.RecyclerViewSwipeMotionActivity" />
+        <activity android:name=".motionlayout.MotionActivity" />
+        <activity android:name=".motionlayout.MotionKeyFrameActivity" />
+        <activity android:name=".motionlayout.MotionBasicActivity" />
+        <activity android:name=".recyclerperconstrain.ConstrainActivity" />
+        <activity android:name=".recyclerliner.LinearActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

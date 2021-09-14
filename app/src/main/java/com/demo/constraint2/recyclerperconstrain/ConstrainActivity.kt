@@ -8,13 +8,13 @@ import com.demo.constraint2.R
 class ConstrainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_recycler)
         openFragment(DoubleRecyclerFragment.newInstance())
     }
 
     private fun openFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .add(R.id.constraintMain, fragment)
+            .add(R.id.frameLayout, fragment)
             .commit()
     }
 }
