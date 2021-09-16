@@ -8,7 +8,7 @@ import com.demo.constraint2.R
 import com.demo.constraint2.circular.CircularConstraintActivity
 import com.demo.constraint2.constraintset.CupcakeActivity
 import com.demo.constraint2.constraintset.MovieActivity
-import com.demo.constraint2.contrainstate.ConstraintLayoutStatesExampleActivity
+import com.demo.constraint2.contrainstate.ConstraintLayoutStatesActivity
 import com.demo.constraint2.miagefilter.ImageFilterViewActivity
 import com.demo.constraint2.motionlayout.MotionActivity
 import com.demo.constraint2.motionlayout.MotionBasicActivity
@@ -51,7 +51,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnImageFilterView ->
                 startActivity(Intent(this, ImageFilterViewActivity::class.java))
             R.id.btnClStates ->
-                startActivity(Intent(this, ConstraintLayoutStatesExampleActivity::class.java))
+                startActivity(Intent(this, ConstraintLayoutStatesActivity::class.java))
             R.id.btnSwipeRecyclerView ->
                 startActivity(Intent(this, RecyclerViewSwipeMotionActivity::class.java))
             R.id.btnMotionCompare ->

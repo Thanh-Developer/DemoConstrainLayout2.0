@@ -22,7 +22,7 @@
         <activity android:name=".constraintset.CupcakeActivity" />
         <activity android:name=".circular.CircularConstraintActivity" />
         <activity android:name=".miagefilter.ImageFilterViewActivity" />
-        <activity android:name=".contrainstate.ConstraintLayoutStatesExampleActivity" />
+        <activity android:name=".contrainstate.ConstraintLayoutStatesActivity" />
         <activity android:name=".motionlayout.RecyclerViewSwipeMotionActivity" />
         <activity android:name=".motionlayout.MotionActivity" />
         <activity android:name=".motionlayout.MotionKeyFrameActivity" />
