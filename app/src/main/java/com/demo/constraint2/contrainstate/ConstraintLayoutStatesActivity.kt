@@ -7,23 +7,29 @@ import androidx.core.os.HandlerCompat.postDelayed
 import com.demo.constraint2.R
 import kotlinx.android.synthetic.main.activity_cl_states_end.*
 
-class ConstraintLayoutStatesExampleActivity : AppCompatActivity() {
+class ConstraintLayoutStatesActivity : AppCompatActivity() {
 
-    val handler = Handler()
+    private val handler = Handler()
+    private var changed = false
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cl_states_start)
-        stateConstraintLayout.loadLayoutDescription(R.xml.constraint_layout_states_example)
-        var changed = false
+        stateConstraintLayout.loadLayoutDescription(R.xml.constraint_layout_states)
+        setClickListener()
+    }
+
+    private fun setClickListener() {
         buttonBakeCake.setOnClickListener {
             stateConstraintLayout.setState(R.id.loading, 0, 0)
+
             postDelayed(handler, {
                 stateConstraintLayout.setState(if (changed) R.id.start else R.id.end, 0, 0)
                 if (changed)
-                    buttonBakeCake.text = "login"
+                    buttonBakeCake.text = "Login"
                 else
-                    buttonBakeCake.text = "try again"
+                    buttonBakeCake.text = "Try again"
                 changed = !changed
             }, null, 3000L)
         }
