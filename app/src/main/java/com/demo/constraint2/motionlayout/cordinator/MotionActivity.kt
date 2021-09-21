@@ -1,4 +1,4 @@
-package com.demo.constraint2.motionlayout
+package com.demo.constraint2.motionlayout.cordinator
 
 
 import android.os.Bundle
@@ -18,8 +18,5 @@ class MotionActivity : AppCompatActivity() {
             adapter = MotionAdapter(items)
             layoutManager = LinearLayoutManager(this@MotionActivity, RecyclerView.VERTICAL, false)
         }
-
-//        setSupportActionBar(toolbar)
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }

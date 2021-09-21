@@ -83,7 +83,7 @@
         app:layout_constraintWidth_percent="0.7" />
 
     <Button
-        android:id="@+id/btnMotionCompare"
+        android:id="@+id/btnMotionCompareCoordinator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -105,7 +105,7 @@
         android:text="KeyFrameSet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMotionCompare"
+        app:layout_constraintTop_toBottomOf="@+id/btnMotionCompareCoordinator"
         app:layout_constraintWidth_percent="0.7" />
 
     <Button
@@ -115,7 +115,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="motionbasic"
+        android:text="motion basic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnKeyFrame"

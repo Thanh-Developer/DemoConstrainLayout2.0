@@ -5,15 +5,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.demo.constraint2.R
-import com.demo.constraint2.circular.CircularConstraintActivity
+import com.demo.constraint2.circular.CircularActivity
 import com.demo.constraint2.constraintset.CupcakeActivity
 import com.demo.constraint2.constraintset.MovieActivity
 import com.demo.constraint2.contrainstate.ConstraintLayoutStatesActivity
 import com.demo.constraint2.miagefilter.ImageFilterViewActivity
-import com.demo.constraint2.motionlayout.MotionActivity
-import com.demo.constraint2.motionlayout.MotionBasicActivity
-import com.demo.constraint2.motionlayout.MotionKeyFrameActivity
-import com.demo.constraint2.motionlayout.RecyclerViewSwipeMotionActivity
+import com.demo.constraint2.motionlayout.cordinator.MotionActivity
+import com.demo.constraint2.motionlayout.basic.MotionBasicActivity
+import com.demo.constraint2.motionlayout.keyframe.MotionKeyFrameActivity
+import com.demo.constraint2.motionlayout.swipe.RecyclerViewSwipeMotionActivity
 import com.demo.constraint2.recyclerliner.LinearActivity
 import com.demo.constraint2.recyclerperconstrain.ConstrainActivity
 import kotlinx.android.synthetic.main.activity_options.*
@@ -33,7 +33,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         btnImageFilterView.setOnClickListener(this)
         btnClStates.setOnClickListener(this)
         btnSwipeRecyclerView.setOnClickListener(this)
-        btnMotionCompare.setOnClickListener(this)
+        btnMotionCompareCoordinator.setOnClickListener(this)
         btnKeyFrame.setOnClickListener(this)
         btnMotionBasic.setOnClickListener(this)
         btnRecyclerLinear.setOnClickListener(this)
@@ -47,14 +47,14 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnCupcake ->
                 startActivity(Intent(this, CupcakeActivity::class.java))
             R.id.btnCircular ->
-                startActivity(Intent(this, CircularConstraintActivity::class.java))
+                startActivity(Intent(this, CircularActivity::class.java))
             R.id.btnImageFilterView ->
                 startActivity(Intent(this, ImageFilterViewActivity::class.java))
             R.id.btnClStates ->
                 startActivity(Intent(this, ConstraintLayoutStatesActivity::class.java))
             R.id.btnSwipeRecyclerView ->
                 startActivity(Intent(this, RecyclerViewSwipeMotionActivity::class.java))
-            R.id.btnMotionCompare ->
+            R.id.btnMotionCompareCoordinator ->
                 startActivity(Intent(this, MotionActivity::class.java))
             R.id.btnKeyFrame ->
                 startActivity(Intent(this, MotionKeyFrameActivity::class.java))

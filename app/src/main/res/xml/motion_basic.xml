@@ -3,17 +3,6 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
-    <Transition
-        motion:constraintSetEnd="@+id/end"
-        motion:constraintSetStart="@+id/start"
-        motion:duration="1000"
-        motion:interpolator="linear">
-        <OnSwipe
-            motion:dragDirection="dragRight"
-            motion:touchAnchorId="@id/button"
-            motion:touchAnchorSide="right" />
-    </Transition>
-
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@id/button"
@@ -43,5 +32,16 @@
                 motion:customColorValue="#9999FF" />
         </Constraint>
     </ConstraintSet>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000"
+        motion:interpolator="linear">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@id/button"
+            motion:touchAnchorSide="right" />
+    </Transition>
 
 </MotionScene>
