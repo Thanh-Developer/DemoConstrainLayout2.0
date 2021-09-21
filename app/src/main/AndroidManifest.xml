@@ -20,13 +20,15 @@
 
         <activity android:name=".constraintset.MovieActivity" />
         <activity android:name=".constraintset.CupcakeActivity" />
-        <activity android:name=".circular.CircularConstraintActivity" />
+        <activity android:name=".circular.CircularActivity" />
         <activity android:name=".miagefilter.ImageFilterViewActivity" />
         <activity android:name=".contrainstate.ConstraintLayoutStatesActivity" />
-        <activity android:name=".motionlayout.RecyclerViewSwipeMotionActivity" />
-        <activity android:name=".motionlayout.MotionActivity" />
-        <activity android:name=".motionlayout.MotionKeyFrameActivity" />
-        <activity android:name=".motionlayout.MotionBasicActivity" />
+        <activity android:name=".motionlayout.swipe.RecyclerViewSwipeMotionActivity" />
+        <activity
+            android:name=".motionlayout.cordinator.MotionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".motionlayout.keyframe.MotionKeyFrameActivity" />
+        <activity android:name=".motionlayout.basic.MotionBasicActivity" />
         <activity android:name=".recyclerperconstrain.ConstrainActivity" />
         <activity android:name=".recyclerliner.LinearActivity" />
     </application>

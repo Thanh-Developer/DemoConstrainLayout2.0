@@ -28,7 +28,7 @@
         android:textSize="24sp"
         app:layout_constraintCircle="@+id/textViewCentre"
         app:layout_constraintCircleAngle="30"
-        app:layout_constraintCircleRadius="90dp"/>
+        app:layout_constraintCircleRadius="90dp" />
 
     <TextView
         android:id="@+id/textView2"

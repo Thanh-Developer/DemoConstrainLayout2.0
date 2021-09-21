@@ -1,4 +1,4 @@
-package com.demo.constraint2.motionlayout
+package com.demo.constraint2.motionlayout.keyframe
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

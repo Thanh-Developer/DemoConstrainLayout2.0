@@ -1,6 +1,7 @@
-package com.demo.constraint2.motionlayout
+package com.demo.constraint2.motionlayout.cordinator
 
 
+import android.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,9 +13,7 @@ class MotionAdapter(private val items: List<String>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return LayoutInflater.from(parent.context).run {
-            inflate(android.R.layout.simple_list_item_1, parent, false).let {
-                ViewHolder(it)
-            }
+            ViewHolder(inflate(R.layout.simple_list_item_1, parent, false))
         }
     }
 
