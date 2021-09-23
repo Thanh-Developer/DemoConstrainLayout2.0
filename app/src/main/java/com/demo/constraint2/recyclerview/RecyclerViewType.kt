@@ -1,4 +1,4 @@
-package com.demo.constraint2.recyclerperconstrain
+package com.demo.constraint2.recyclerview
 
 class RecyclerViewType {
     private val viewTypes: ArrayList<Pair<Int, ViewTypePosition>> = ArrayList()

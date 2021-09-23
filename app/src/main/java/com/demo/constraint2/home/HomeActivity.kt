@@ -14,8 +14,8 @@ import com.demo.constraint2.motionlayout.cordinator.MotionActivity
 import com.demo.constraint2.motionlayout.basic.MotionBasicActivity
 import com.demo.constraint2.motionlayout.keyframe.MotionKeyFrameActivity
 import com.demo.constraint2.motionlayout.swipe.RecyclerViewSwipeMotionActivity
-import com.demo.constraint2.recyclerliner.LinearActivity
-import com.demo.constraint2.recyclerperconstrain.ConstrainActivity
+import com.demo.constraint2.recyclerview.liner.LinearActivity
+import com.demo.constraint2.recyclerview.constrain.ConstrainActivity
 import kotlinx.android.synthetic.main.activity_options.*
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {

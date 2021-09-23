@@ -1,4 +1,4 @@
-package com.demo.constraint2.recyclerperconstrain
+package com.demo.constraint2.recyclerview
 
 data class Movie(
     var title: String,

@@ -29,8 +29,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".motionlayout.keyframe.MotionKeyFrameActivity" />
         <activity android:name=".motionlayout.basic.MotionBasicActivity" />
-        <activity android:name=".recyclerperconstrain.ConstrainActivity" />
-        <activity android:name=".recyclerliner.LinearActivity" />
+        <activity android:name="com.demo.constraint2.recyclerview.constrain.ConstrainActivity" />
+        <activity android:name="com.demo.constraint2.recyclerview.liner.LinearActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
